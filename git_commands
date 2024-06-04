@@ -34,3 +34,13 @@ git stash pop
 
 remove stash changes
 git stash clear
+
+connect repository to folder
+git remote add origin {repo https url}
+
+remove remote origin
+git remote remove origin
+
+urls attached to current folder
+git remote -v
+

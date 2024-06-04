@@ -25,3 +25,12 @@ git restore --staged {filename1} {filename2} {filename3}
 
 restore deleted files or get back to particular commit
 git reset {commit key}
+
+it will keep stage changes somewhere else if we dont need it at a time but in future
+git stash
+
+get stash changes back
+git stash pop
+
+remove stash changes
+git stash clear

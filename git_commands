@@ -1,0 +1,27 @@
+initialize git repo
+git init
+
+create file
+touch test.txt
+
+check status of tracked untracked files
+git status
+
+add all changes in stage
+git add . (add all the files)
+git add {filename1} {filename2} {filename3}
+
+commit the stage changes
+git commit -m 'message'
+
+to open file in edit mode
+vim {filename}
+
+to view file content
+cat {filename}
+
+restore staged changes
+git restore --staged {filename1} {filename2} {filename3}
+
+restore deleted files or get back to particular commit
+git reset {commit key}

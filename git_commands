@@ -44,3 +44,41 @@ git remote remove origin
 urls attached to current folder
 git remote -v
 
+create new branch
+git branch {branchname}
+
+move to another branch
+git checkout {branchname}
+
+merge another branch to current brach
+git merge {merge branchname}
+
+to get other people code and make changes
+git clone {code https url}
+
+upstream url - from where you want to fork code
+to add upstream url
+git remote add upstream {code https url}
+
+check upstream url
+git remote -v
+
+fetch all commits and changes from where you forked the code
+checkout to your main branch containing forked code and type,
+git fetch --all --prune  #this will fetch all the changes and removed files into your main branch
+git reset --hard upstrem/main  #this will reset all the commits has been done on source code 
+git push origin main  #push all these changes in your main branch
+
+above mentioned 3 commands can be performed using a single command
+git pull upstream main  #this will internally done fetch, reset and push
+
+if you have multiple commits and want to combine in one commit
+git rebase -i {commit id above which all commits will be combined}
+
+now you can use 'pick' or 's' (squash) to combine commits
+all 's' commits will be merged into it's above 'pick' commit
+
+press esc : x -> this will allow you to write new message for combined commit
+
+press esc : x to exit
+
